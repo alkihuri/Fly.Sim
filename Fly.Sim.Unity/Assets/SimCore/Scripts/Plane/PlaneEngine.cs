@@ -24,7 +24,7 @@ public class PlaneEngine : MonoBehaviour
 
     private void DoEngine()
     {
-        var engineValue = SimulationManager.Instance.EnginePower * EnginePower;
+        var engineValue = Mathf.Lerp(0,20, SimulationManager.Instance.EnginePower) * EnginePower;
         ApplyForce(engineValue);
     }
 

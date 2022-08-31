@@ -22,7 +22,20 @@ public class PlaneController : MonoBehaviour
 
     private void Settings()
     {
+        StartSettings();
+    }
+
+    private void StartSettings()
+    {
+
         _plane.transform.position = SimConstatns.StartWorldPostion == null ? _plane.transform.position : SimConstatns.StartWorldPostion;
+        
+        
+        var x = transform.transform.eulerAngles.x;
+        var z = transform.transform.eulerAngles.z;
+        _plane.transform.LookAt(Vector3.zero);
+        var y = transform.transform.eulerAngles.y;
+        _plane.transform.eulerAngles = new Vector3(x, y, z);
         StartCoroutine(StartForce());
     }
 

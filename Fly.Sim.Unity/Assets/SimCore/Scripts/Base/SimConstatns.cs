@@ -4,10 +4,10 @@ using UnityEngine;
 
 public static class SimConstatns
 {
-    private static float inputLongtide;
-    private static float inputLatitude;
-    private static float _height;
-    private static float _scale;
+    private static float inputLongtide = 0;
+    private static float inputLatitude = 0;
+    private static float _height = 50;
+    private static float _scale = 1;
 
     public static float InputLongtide { get => inputLongtide; set => inputLongtide = value; }
     public static float InputLatitude { get => inputLatitude; set => inputLatitude = value; }

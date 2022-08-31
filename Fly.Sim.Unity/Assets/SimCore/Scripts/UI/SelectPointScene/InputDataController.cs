@@ -32,10 +32,10 @@ public class InputDataController : MonoBehaviour
         var latitude = _latitude.GetData();
         var heght = _height.GetData();
 
-        SimConstatns.Scale = 10;
-        SimConstatns.InputLatitude = Mathf.Clamp(latitude, -100, 100);
-        SimConstatns.InputLongtide = Mathf.Clamp(longtide, -100, 100);
-        SimConstatns.Height = heght;
+        SimConstatns.Scale = 1;
+        SimConstatns.InputLatitude = Mathf.Clamp(latitude, -500, 500);
+        SimConstatns.InputLongtide = Mathf.Clamp(longtide, -500, 500);
+        SimConstatns.Height = Mathf.Clamp(heght, -1000, 1000);
 
         OnDatParse.Invoke();
     }
