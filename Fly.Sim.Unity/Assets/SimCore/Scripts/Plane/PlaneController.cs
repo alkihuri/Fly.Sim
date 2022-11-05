@@ -28,7 +28,7 @@ public class PlaneController : MonoBehaviour
     private void StartSettings()
     {
 
-        _plane.transform.position = SimConstatns.StartWorldPostion == null ? _plane.transform.position : SimConstatns.StartWorldPostion;
+        //_plane.transform.position = SimConstatns.StartWorldPostion == null ? _plane.transform.position : SimConstatns.StartWorldPostion;
         
         
         var x = transform.transform.eulerAngles.x;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class XBoxJoystickIntegration : MonoBehaviour
 {
-    private void LateUpdate()
+    private void Update()
     {
         SimulationManager.Instance.MainSteer += Input.GetAxis("Horizontal_2");
         SimulationManager.Instance.KeelSteer += Input.GetAxis("Horizontal");

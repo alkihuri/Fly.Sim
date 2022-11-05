@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SelectPoint.unity
-    guid: f28835519c607244194929428bceaafe
-  - enabled: 1
     path: Assets/Scenes/FlyDemo.unity
     guid: d9530c28f44177a4893cd09ce220c959
   m_configObjects: {}

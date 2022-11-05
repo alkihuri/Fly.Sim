@@ -15,6 +15,10 @@ public class CanvasParser : MonoBehaviour
     {
         ParseDate();
     }
+    private void LateUpdate()
+    {
+        VersaCanvasSync();
+    }
 
     private void ParseDate()
     {
@@ -24,10 +28,7 @@ public class CanvasParser : MonoBehaviour
         SimulationManager.Instance.EnginePower = _powerSteer.Vertical;
     }
 
-    private void LateUpdate()
-    {
-        VersaCanvasSync();
-    }
+   
 
     private void VersaCanvasSync()
     {
